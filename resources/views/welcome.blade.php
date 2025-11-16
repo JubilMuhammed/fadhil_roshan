@@ -1025,7 +1025,7 @@ Relations
     </div>
     <!-- rts service area end -->
 
-    <div class="rts-testimonials-area rts-section-gap bg-dark-1">
+    <!-- <div class="rts-testimonials-area rts-section-gap bg-dark-1">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -1147,7 +1147,7 @@ Relations
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <div class="rts-marquree-area-start marque-2">
         <div class="container-full">
