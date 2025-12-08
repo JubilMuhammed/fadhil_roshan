@@ -15,9 +15,9 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <style>
         /* Brand logo styling for about page */
+/* Brand logo styling for about page */
 .brand-logo-about {
     transition: all 0.4s ease;
-    /* Convert to grayscale/monochrome like the example image */
     filter: grayscale(100%) brightness(0%) contrast(100%);
     opacity: 0.9;
     max-height: 130px;
@@ -25,32 +25,109 @@
     object-fit: contain;
 }
 
-/* Hover effect - show original colors */
 .single-brand:hover .brand-logo-about {
     filter: grayscale(0%) brightness(100%) contrast(100%);
     opacity: 1;
     transform: scale(1.1);
 }
 
-/* Ensure smooth transition for the link wrapper */
 .single-brand {
     display: inline-block;
     transition: transform 0.4s ease;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
+/* Brand wrapper layout */
+.brand-main-wrapper-about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 20px;
+}
+
+/* Tablet view (768px - 991px) */
+@media (max-width: 991px) {
+    .brand-logo-about {
+        max-height: 80px;
+    }
+    
+    .brand-main-wrapper-about {
+        gap: 30px;
+    }
+}
+
+/* Mobile landscape (577px - 767px) */
+@media (max-width: 767px) {
+    .brand-logo-about {
+        max-height: 60px;
+    }
+    
+    .brand-main-wrapper-about {
+        gap: 25px;
+        justify-content: space-around;
+    }
+    
+    .single-brand {
+        flex: 0 0 calc(33.333% - 20px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* Mobile portrait (up to 576px) */
+@media (max-width: 576px) {
     .brand-logo-about {
         max-height: 50px;
+    }
+    
+    .brand-main-wrapper-about {
+        gap: 20px;
+    }
+    
+    .single-brand {
+        flex: 0 0 calc(50% - 15px);
+    }
+}
+
+/* Extra small devices (up to 400px) */
+@media (max-width: 400px) {
+    .brand-logo-about {
+        max-height: 40px;
+    }
+    
+    .brand-main-wrapper-about {
+        gap: 15px;
+    }
+    
+    .single-brand {
+        flex: 0 0 calc(50% - 10px);
+    }
+}
+
+/* Container padding adjustments for mobile */
+@media (max-width: 767px) {
+    .rtes-brand-area .container.plr--60 {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+    
+    .rtes-brand-area .row.mb--60 {
+        margin-bottom: 30px !important;
     }
 }
 
 @media (max-width: 576px) {
-    .brand-logo-about {
-        max-height: 40px;
+    .rtes-brand-area .container.plr--60 {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+    
+    .rtes-brand-area .row.mb--60 {
+        margin-bottom: 20px !important;
     }
 }
-
 /* Optional: Add spacing between rows if needed */
 .brand-main-wrapper-about {
     margin-bottom: 20px;
