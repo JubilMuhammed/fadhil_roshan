@@ -553,7 +553,7 @@
                 <div class="col-lg-6">
                     <div class="about-three-right-content">
                         <div class="title-area-left-three">
-                            <span>Aboutwhhhhhhhhht</span>
+                            <span>About</span>
                             <h2 class="title quote">I Drive Growth & Define Brands.</h2>
                         </div>
                         <p class="disc rts-text-anim">
